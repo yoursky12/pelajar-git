@@ -1,0 +1,31 @@
+body{
+    background-color: white;
+    font-family: century gothic;
+    display: flex;
+    justify-content: center;
+    align-items: upper-center;
+}
+h1{
+    transition: all 0.2s ease;
+    font-size: 50px;
+    border-radius: 10px ;
+    background-color: black;
+    color :aliceblue 
+    padding: 10px;
+}
+h1:hover{
+    transform: scale(2);
+    background-color: white;
+    color: black;
+    border-radius: 1px;
+    outline: 10px solid black;  
+}
+button{
+    color: black;
+    background-color: cyan;
+    border-radius:1px; 
+    outline: none;
+    border: none;
+    padding : 10px;
+    
+}

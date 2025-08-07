@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+    <link rel="stylesheet" href="style4.css">
+        
+</head>
+<body>
+    <!-- Login Section (Initially shown) -->
+    <div id="login-section">
+        <div class="login-container">
+            <div class="login-box">
+                <h2>Login</h2>
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="klik your username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="klik your password">
+                    </div>
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="button" class="login-btn" id="login-button">Login</button>
+                    <div class="register-link">
+                        <p>Don't have an account? <a href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content (Initially hidden) -->
+    <div id="main-content" class="hidden">
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <nav class="navbar">
+                    <div class="logo">MyProfile</div>
+                    <ul class="nav-links">
+                        <li><a href="#" class="tab-link" data-tab="home">Home</a></li>
+                        <li><a href="#" class="tab-link" data-tab="about">About</a></li>
+                        <li><a href="#" class="tab-link" data-tab="data">Personal Data</a></li>
+                        <li><a href="#" class="tab-link" data-tab="experience">Experience</a></li>
+                        <li><a href="#" class="tab-link" data-tab="education">Education</a></li>
+                        <li><a href="#" class="tab-link" data-tab="contact">Contact</a></li>
+                        <li><a href="#" id="logout-btn">Logout</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero tab-content" id="home-tab">
+            <div class="container text-center">
+                <img src="">
+                <h1>Frichintia niken gita natasyah</h1>
+                <p>124140106</p>
+                <p>perkenalkan nama saya  Frichintia Niken Gita Natasyah  dari program studi Teknik Informatika, Institut Teknologi Sumatera</p>
+                <a href="#about" class="btn">Explore More</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="tab-content" id="about-tab">
+            <div class="container">
+                <h2 class="text-center">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello! I'm John Doe, a passionate web developer with over 5 years of experience in creating beautiful and functional websites. I specialize in front-end development but also have strong back-end skills.</p>
+                        <p>My journey in web development began during my college days when I built my first website. Since then, I've worked with various clients and companies, helping them establish their online presence.</p>
+                        <p>When I'm not coding, you can find me hiking, reading tech blogs, or experimenting with new web technologies.</p>
+                    </div>
+                    <div class="about-img">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/faf724b0-a022-4f0f-9ed1-fa7af76d3930.png" alt="Professional developer working on a laptop in a modern office space">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Data Section -->
+        <section class="data-diri" id="data">
+            <div class="container">
+                <h2 class="text-center">Personal Data</h2>
+                <div class="data-grid">
+                    <div class="data-card">
+                        <h3>about me</h3>
+                        <div class="data-item">
+                            <strong>Nama:</strong> Frichintia niken gita natasyah
+                        </div>
+                        <div class="data-item">
+                            <strong>Tanggal Lahir:</strong> 19 september 2005
+                        </div>
+                        <div class="data-item">
+                            <strong>domisili:</strong> Jl.kelengkeng 14 perumahan pemda
+                        </div>
+                        <div class="data-item">
+                            <strong>Nationality:</strong> American
+                        </div>
+                    </div>
+                    <div class="data-card">
+                        <h3>Contact Details</h3>
+                        <div class="data-item">
+                            <strong>Address:</strong> 123 Main St, New York, USA
+                        </div>
+                        <div class="data-item">
+                            <strong>Phone:</strong> +1 234 567 890
+                        </div>
+                        <div class="data-item">
+                            <strong>Email:</strong> john.doe@example.com
+                        </div>
+                    </div>
+                    <div class="data-card">
+                        <h3>Skills</h3>
+                        <div class="data-item">
+                            <strong>HTML/CSS:</strong> Expert
+                        </div>
+                        <div class="data-item">
+                            <strong>JavaScript:</strong> Advanced
+                        </div>
+                        <div class="data-item">
+                            <strong>React:</strong> Advanced
+                        </div>
+                        <div class="data-item">
+                            <strong>Node.js:</strong> Intermediate
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="container">
+                <h2 class="text-center">Professional Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>Senior Web Developer</h3>
+                            <p>Tech Solutions Inc. &bull; 2020 - Present</p>
+                            <p>Lead a team of developers to build and maintain web applications for various clients. Implemented CI/CD pipelines and improved deployment processes.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h3>Web Developer</h3>
+                            <p>Digital Creatives LLC &bull; 2017 - 2020</p>
+                            <p>Developed responsive websites and web applications using modern JavaScript frameworks. Collaborated with designers to implement UI/UX improvements.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>Junior Developer</h3>
+                            <p>StartUp Solutions &bull; 2015 - 2017</p>
+                            <p>Assisted in building and maintaining company websites. Learned web development fundamentals and best practices.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h3>Freelance Developer</h3>
+                            <p>Self-employed &bull; 2013 - 2015</p>
+                            <p>Built simple websites for small businesses and individuals. Gained hands-on experience with HTML, CSS, and basic JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education" id="education">
+            <div class="container">
+                <h2 class="text-center">Education</h2>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="education-img">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/de5028ec-5ce1-4dd0-9c98-f0addfe679a4.png" alt="University campus with modern buildings and green spaces">
+                        </div>
+                        <div class="education-info">
+                            <div class="education-duration">2010 - 2014</div>
+                            <h3>Bachelor of Computer Science</h3>
+                            <p>State University</p>
+                            <p>GPA: 3.8/4.0</p>
+                            <p>Specialization: Web Technologies</p>
+                        </div>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-img">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cf2eae70-ef19-4616-be2c-0de412134e5a.png" alt="Modern high school building with students in front">
+                        </div>
+                        <div class="education-info">
+                            <div class="education-duration">2006 - 2010</div>
+                            <h3>High School Diploma</h3>
+                            <p>Central High School</p>
+                            <p>Honors: Valedictorian</p>
+                            <p>Activities: Coding Club President</p>
+                        </div>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-img">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/904b8a4c-e1b9-40e1-bb42-6b9ab9ca6924.png" alt="Online learning platform interface with courses displayed">
+                        </div>
+                        <div class="education-info">
+                            <div class="education-duration">2014 - Present</div>
+                            <h3>Online Courses</h3>
+                            <p>Various Platforms</p>
+                            <ul>
+                                <li>Advanced JavaScript Concepts</li>
+                                <li>React Masterclass</li>
+                                <li>UI/UX Design Principles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2 class="text-center">Get In Touch</h2>
+                <div class="contact-container">
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" placeholder="Your message"></textarea>
+                            </div>
+                            <button type="button" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>123 Main St, New York, USA</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>john.doe@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Call</h4>
+                                <p>+1 234 567 890</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2023 MyProfile. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Toggle mobile menu
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Tab switching functionality
+        document.querySelectorAll('.tab-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Hide all tabs
+                document.querySelectorAll('.tab-content').forEach(tab => {
+                    tab.style.display = 'none';
+                });
+                
+                // Show selected tab
+                const tabId = this.getAttribute('data-tab') + '-tab';
+                document.getElementById(tabId).style.display = 'block';
+                
+                // Close mobile menu if open
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+
+        // Show home tab by default
+        document.getElementById('home-tab').style.display = 'block';
+
+        // Login functionality
+        const loginButton = document.getElementById('login-button');
+        const logoutButton = document.getElementById('logout-btn');
+        const loginSection = document.getElementById('login-section');
+        const mainContent = document.getElementById('main-content');
+
+        loginButton.addEventListener('click', () => {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            // Simple validation for demo purposes
+            if (username && password) {
+                loginSection.classList.add('hidden');
+                mainContent.classList.remove('hidden');
+                window.scrollTo(0, 0);
+            } else {
+                alert('Please enter both username and password');
+            }
+        });
+
+        logoutButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            loginSection.classList.remove('hidden');
+            mainContent.classList.add('hidden');
+            document.getElementById('username').value = '';
+            document.getElementById('password').value = '';
+        });
+    </script>
+</body>
+</html>
